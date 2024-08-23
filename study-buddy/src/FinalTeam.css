@@ -1,0 +1,23 @@
+.finalTeam {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .teamGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teamMember {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .teamMember img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
