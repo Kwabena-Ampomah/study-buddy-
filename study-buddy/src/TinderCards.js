@@ -109,7 +109,7 @@ function TinderCards() {
       if (leftPerson) {
         setSwipedLeft(swipedLeft => [...swipedLeft, leftPerson]);
 
-        // Automatically add the paired player if available
+        const pairedPlayerName = selectedPlayers.push(selectRandomPlayers);
         const pairedPlayerName = pairs[nameToDelete];
         if (pairedPlayerName) {
           const pairedPlayer = people.find(person => person.name === pairedPlayerName);
