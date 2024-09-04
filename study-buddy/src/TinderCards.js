@@ -43,7 +43,6 @@ function TinderCards() {
         ST: 1,
         GK: 1
       };
-
       const positionGroups = {
         CB: [],
         LB: [],
@@ -109,7 +108,7 @@ function TinderCards() {
       if (leftPerson) {
         setSwipedLeft(swipedLeft => [...swipedLeft, leftPerson]);
 
-        const pairedPlayerName = selectedPlayers.push(selectRandomPlayers);
+        
         const pairedPlayerName = pairs[nameToDelete];
         if (pairedPlayerName) {
           const pairedPlayer = people.find(person => person.name === pairedPlayerName);
@@ -180,14 +179,11 @@ function TinderCards() {
                 <li key={person.name}>{person.name}</li>
               ))
             ) : (
-              <li>No additional players found</li>
+              <h4>Are we playing a match? Because it feels like we’re in perfect formation?</h4>
             )}
           </ul>
-          <h3>Debug Info:</h3>
-          <p>Swiped Left Positions: {Array.from(new Set(swipedLeft.map(person => person.pos))).join(", ")}</p>
-          <p>Swiped Right Names: {Array.from(new Set(swipedRight.map(person => person.name))).join(", ")}</p>
-          <p>Available Players: {people.map(p => `${p.name} (${p.pos})`).join(", ")}</p>
-          <p>Additional Players Found: {additionalPlayers.map(p => `${p.name} (${p.pos})`).join(", ")}</p>
+          <p>Trash: {Array.from(new Set(swipedLeft.map(person => person.name))).join(", ")}</p>
+          <p>Keepers: {Array.from(new Set(swipedRight.map(person => person.name))).join(", ")}</p>
         </div>
       ) : (
         <div className="tinderCards_cardContainer">
