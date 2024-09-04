@@ -4,4 +4,4 @@ Lets see who you love and who you hate with Tinder Fut draft.
 Video below  !
              v
 
-https://github.com/user-attachments/assets/64f7e126-6cd8-415d-9e86-b92b5a880c87
+
